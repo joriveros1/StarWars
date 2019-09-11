@@ -13,19 +13,37 @@
 </head>
 
 <body ng-controller="SkyWalker">
-  <nav class="navbar navbar-expand-md navbar-dark p-0 shadow-sm" style="background-color:#334455;">
-   <div class="container bg-dark p-2">
-    <a class="navbar-brand font-weight-bold" href="./"><i class="fa fa-video-camera"></i>&nbsp;&nbsp;Tienda StarWars</a>
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tsp1" aria-controls="tsp1" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-md navbar-dark p-0 shadow-sm" style="background-color:#336699;">
+   <div class="container bg-info p-2">
+    <a class="navbar-brand font-weight-bold" href="./"><i class="fa fa-play-circle"></i>&nbsp;&nbsp;Tienda StarWars</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#starwars" aria-controls="starwars" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
      </button>
-    <div class="collapse navbar-collapse justify-content-end" id="tsp1">
+    <div class="collapse navbar-collapse justify-content-end float-right" id="starwars">
      <ul class="navbar-nav m-auto text-light">
-      <li class="nav-item">
+      <li class="nav-item p-2">
        <a class="nav-link text-light font-weight-bold" href="./">Inicio</a>
       </li>
-      <li class="nav-item">
-       <a class="nav-link text-light font-weight-bold" href="?page=cXVpZW5lcyBzb21vcw==">Quienes Somos?</a>
+      <li class="nav-item p-2">
+        <div class="dropdown">
+         <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Páginas
+         </button>
+        <div class="dropdown-menu bg-info border-0" aria-labelledby="dropdownMenuButton">
+         <a class="dropdown-item" href="#">Peliculas</a>
+         <a class="dropdown-item" href="#">Personajes</a>
+         <a class="dropdown-item" href="#">Planetas</a>
+         <a class="dropdown-item" href="#">Naves</a>
+        </div>
+       </div>
+      </li>
+      <li class="nav-item float-right">
+       <div class="input-group p-2">
+        <div class="input-group-prepend">
+         <span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
+        </div>
+        <input type="text" class="form-control" name="buscador" placeholder="Buscar Titulo">
+       </div>
       </li>
      </ul>
     </div>
