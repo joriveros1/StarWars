@@ -1,15 +1,10 @@
 var app = angular.module("StarWars", []);
 app.controller("SkyWalker", function($scope, $http) {
-    $scope.paginas = {};
+    var url = 'https://swapi.co/api/';
+    $scope.paginas = [
+        { pagina: "Personajes", url: "personajes.html" },
+        { pagina: "Planetas", url: "planetas.html" }
+    ];
     $scope.titulo = "Tienda StarWars";
-    $http.get("https://swapi.co/api/people/?format=json")
-        .success(function(data) {
-            $scope.data = data;
-            angular.forEach($scope.data, function(persona) {
-                $scope.paginas[persona] = '';
-            });
-        })
-        .error(function(err) {
-
-        });
+    
 });
