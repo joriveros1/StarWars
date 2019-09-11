@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js/angular.min.js"></script>
@@ -12,7 +13,28 @@
 </head>
 
 <body ng-controller="SkyWalker">
+  <nav class="navbar navbar-expand-md navbar-dark p-0 shadow-sm" style="background-color:#334455;">
+   <div class="container bg-dark p-2">
+    <a class="navbar-brand font-weight-bold" href="./"><i class="fa fa-video-camera"></i>&nbsp;&nbsp;Tienda StarWars</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tsp1" aria-controls="tsp1" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+     </button>
+    <div class="collapse navbar-collapse justify-content-end" id="tsp1">
+     <ul class="navbar-nav m-auto text-light">
+      <li class="nav-item">
+       <a class="nav-link text-light font-weight-bold" href="./">Inicio</a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link text-light font-weight-bold" href="?page=cXVpZW5lcyBzb21vcw==">Quienes Somos?</a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+<div class="container">
     {{"Hola Usuario: " + titulo}}
+<br><i class="fa fa-glass"></i>Saludos
+</div>
 </body>
 
 </html>
