@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ng-youtube-embed-iframe@latest/ng-youtube.min.js"></script>
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/controller.js"></script>
     <link href="css/main.css" rel="stylesheet">
@@ -18,7 +19,7 @@
 <body ng-controller="SkyWalker">
     <nav class="navbar navbar-expand-md navbar-dark p-0 shadow-sm" style="background-color:#556677;">
         <div class="container bg-dark p-2">
-            <a class="navbar-brand font-weight-bold" href="./"><h2 class="font-weight-bold"><i class="fa fa-space-shuttle"></i>&nbsp;&nbsp;{{titulo}}</h2></a>
+            <a class="navbar-brand font-weight-bold" href="./"><h2 class="font-weight-bold ml-4"><i class="fa fa-space-shuttle"></i>&nbsp;&nbsp;{{titulo}}</h2></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#starwars" aria-controls="starwars" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
      </button>
@@ -101,5 +102,8 @@
       </a>
      </div>
     </div>
+   <div class="container bg-dark p-2">
+    <div class="w-100 bg-white rounded p-2">Texto de Prueba</div>
+   </div>
 </body>
 </html>
