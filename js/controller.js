@@ -11,14 +11,13 @@ app.controller("SkyWalker", function($scope, $http) {
     ];
     $scope.titulo = "Tienda StarWars";
     $scope.carruso = [
-        { src: "https://wallpapercave.com/wp/wp3357495.jpg", contenido: "", status: "active" },
-        { src: "https://wallpapercave.com/wp/wp1884717.jpg", contenido: "", status: "" },
-        { src: "https://wallpapercave.com/wp/wp3390444.jpg", contenido: "", status: "" },
-        { src: "https://wallpapercave.com/wp/wp3614448.jpg", contenido: "", status: "" },
-        { src: "https://wallpapercave.com/wp/wp3614454.jpg", contenido: "", status: "" },
-        { src: "https://wallpapercave.com/wp/wp3614456.jpg", contenido: "", status: "" },
-        { src: "https://wallpapercave.com/wp/wp3614483.jpg", contenido: "", status: "" },
-        { src: "https://wallpapercave.com/wp/wp3614485.jpg", contenido: "", status: "" },
-        { src: "https://wallpapercave.com/wp/wp2670943.jpg", contenido: "", status: "" }
+        { src: "https://wallpapercave.com/wp/wp3357495.jpg", contenido: "", status: "no" },
+        { src: "https://wallpapercave.com/wp/wp3390444.jpg", contenido: "", status: "no" },
+        { src: "https://wallpapercave.com/wp/wp3614448.jpg", contenido: "", status: "no" },
+        { src: "https://wallpapercave.com/wp/wp3614454.jpg", contenido: "", status: "no" },
+        { src: "https://wallpapercave.com/wp/wp3614456.jpg", contenido: "", status: "no" },
+        { src: "https://wallpapercave.com/wp/wp3614483.jpg", contenido: "", status: "no" },
+        { src: "https://wallpapercave.com/wp/wp3614485.jpg", contenido: "", status: "no" },
+        { src: "https://wallpapercave.com/wp/wp2670943.jpg", contenido: "", status: "no" }
     ];
 });
