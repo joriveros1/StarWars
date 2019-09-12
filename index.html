@@ -3,10 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/controller.js"></script>
     <title>Tienda StarWars</title>
@@ -29,9 +32,9 @@
                             <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
            StarPedia
          </button>
-                            <div class="dropdown-menu bg-info border-0" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-menu bg-info border-0 shadow-lg" aria-labelledby="dropdownMenuButton">
                                 <div class="dropdown-item px-2" ng-repeat="paginax in paginas">
-                                    <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="{{paginax.url}}" class="btn">{{paginax.pagina}}</a>
+                                    <i class="fa fa-folder" aria-hidden="true"></i><a href="{{paginax.url}}" class="btn">{{paginax.pagina}}</a>
                                 </div>
                             </div>
                         </div>
@@ -48,10 +51,20 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-        {{"Hola Usuario: " + titulo}}
-        <br><i class="fa fa-glass"></i>Saludos
+    <div class="container slide">
+        <div id="carrusel" class="carousel slide p-0 m-0" data-ride="carousel" data-interval="2000">
+            <div class="carousel-inner rounded" ng-repeat="contx in carruso">
+              <div class="carousel-item {{contx.status}}">
+                <img src="{{contx.src}}" class="img-fluid w-100">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carrusel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#carrusel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
     </div>
 </body>
-
 </html>
