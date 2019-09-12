@@ -29,8 +29,10 @@
                             <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
            Páginas
          </button>
-                            <div class="dropdown-menu bg-info border-0" aria-labelledby="dropdownMenuButton" ng-repeat="pagina in paginas">
-                                <a class="dropdown-item" href="{{pagina.url}}">{{pagina.pagina}}</a>
+                            <div class="dropdown-menu bg-info border-0" aria-labelledby="dropdownMenuButton">
+                                <div class="dropdown-item" ng-repeat="paginax in paginas">
+                                    <a class="nav-item text-dark p-2">{{paginax.pagina}}</a>
+                                </div>
                             </div>
                         </div>
                     </li>
