@@ -27,11 +27,11 @@
                     <li class="nav-item p-2">
                         <div class="dropdown">
                             <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           Páginas
+           StarPedia
          </button>
                             <div class="dropdown-menu bg-info border-0" aria-labelledby="dropdownMenuButton">
-                                <div class="dropdown-item" ng-repeat="paginax in paginas">
-                                    <a class="nav-item text-dark p-2">{{paginax.pagina}}</a>
+                                <div class="dropdown-item px-2" ng-repeat="paginax in paginas">
+                                    <i class="fa fa-arrow-right" aria-hidden="true"></i><a href="{{paginax.url}}" class="btn">{{paginax.pagina}}</a>
                                 </div>
                             </div>
                         </div>
