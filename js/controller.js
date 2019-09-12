@@ -9,5 +9,7 @@ app.controller("SkyWalker", function($scope, $http) {
         { pagina: "Vehiculos", url: "vehiculos.html" },
         { pagina: "Naves", url: "naves.html" }
     ];
-    $scope.titulo = "Tienda StarWars";
+    $scope.titulo = "StarWars Shop";
+    $scope.xhome = "Inicio";
+    $scope.xpedia = "StarPedia";
 });
